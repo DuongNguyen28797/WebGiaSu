@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+       
+<tiles-definitions>
+  <!-- đây là giao diện admin -->
+  <definition name="admin.template" template="/WEB-INF/templates/admin/template.jsp">
+    <put-attribute name="header" value="/WEB-INF/templates/admin/header.jsp" />
+    <put-attribute name="leftcolums" value="/WEB-INF/templates/admin/leftcolums.jsp" />
+  	<put-attribute name="content" value="" />
+  	<put-attribute name="footer" value="/WEB-INF/templates/admin/footer.jsp" />
+  </definition>
+  
+ 
+  <definition name="admin.index" extends="admin.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/admin/index/index.jsp" />
+  </definition>
+  
+   <definition name="admin.index.baiviet" extends="admin.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/admin/baiviet/indexBaiviet.jsp" />
+  </definition>
+  
+  <definition name="admin.baiviet.add" extends="admin.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/admin/baiviet/addBaiviet.jsp" />
+  </definition>
+  
+  <definition name="admin.baiviet.edit" extends="admin.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/admin/baiviet/editBaiviet.jsp" />
+  </definition>
+  
+  <definition name="admin.index.giasu" extends="admin.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/admin/giasu/indexGiasu.jsp" />
+  </definition>
+  
+  <definition name="admin.giasu.chitiet" extends="admin.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/admin/giasu/taikhoangiasu.jsp" />
+  </definition>
+  
+  <definition name="admin.phuhuynh.chitiet" extends="admin.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/admin/phuhuynh/taikhoanphuhuynh.jsp" />
+  </definition>
+
+ <definition name="admin.index.phuhuynh" extends="admin.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/admin/phuhuynh/indexPhuHuynh.jsp" />
+  </definition>
+  
+  <definition name="admin.index.dangky" extends="admin.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/admin/dangky/indexDangKy.jsp" />
+  </definition>
+  
+   <definition name="admin.index.hoadon" extends="admin.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/admin/naptien/listHoaDon.jsp" />
+  </definition>
+  
+  <definition name="admin.index.them" extends="admin.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/admin/dangky/addDangKy.jsp" />
+  </definition>
+  
+   <definition name="admin.edit.lop" extends="admin.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/admin/dangky/editLop.jsp" />
+  </definition>
+  
+   <definition name="admin.edit.mon" extends="admin.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/admin/dangky/editMon.jsp" />
+  </definition>
+  
+   <definition name="admin.edit.quanhuyen" extends="admin.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/admin/dangky/editQuanHuyen.jsp" />
+  </definition>
+  
+   <definition name="admin.lienhe" extends="admin.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/admin/lienhe/indexLienHe.jsp" />
+  </definition>
+  
+  <definition name="admin.lienhe.chitiet" extends="admin.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/admin/lienhe/chitietLienHe.jsp" />
+  </definition>
+  
+  <definition name="admin.suawebxu" extends="admin.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/admin/giasu/tangxu.jsp" />
+  </definition>
+  
+  <definition name="admin.suawebxu.phuhuynh" extends="admin.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/admin/phuhuynh/tangxu.jsp" />
+  </definition>
+  
+  <definition name="403.template" template="/WEB-INF/templates/403/template.jsp">
+  	<put-attribute name="content" value="/WEB-INF/jsp/public/product/403.jsp" />
+  </definition>
+  
+  
+  <!-- kết thúc admin -->
+  
+  
+   <!-- đây là giao diện gia su -->
+   <definition name="giasu.template" template="/WEB-INF/templates/giasu/template.jsp">
+    <put-attribute name="header" value="/WEB-INF/templates/giasu/header.jsp" />
+  	<put-attribute name="content" value="" />
+  	<put-attribute name="footer" value="/WEB-INF/templates/giasu/footer.jsp" />
+  </definition>
+  
+ 
+  <definition name="giasu.index" extends="giasu.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/giasu/index/index.jsp" />
+  </definition>
+  
+  <definition name="giasu.chitiet" extends="giasu.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/giasu/giasu/taikhoangiasu.jsp" />
+  </definition>
+  
+  <definition name="giasu.baiviet" extends="giasu.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/giasu/index/baiviet.jsp" />
+  </definition>
+  
+   <definition name="giasu.thongbao" extends="giasu.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/giasu/thongbao/thongbao.jsp" />
+  </definition>
+  
+  <definition name="giasu.suataikhoan" extends="giasu.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/giasu/giasu/suataikhoan.jsp" />
+  </definition>
+  
+  <definition name="giasu.chitiet.baiviet" extends="giasu.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/public/baiviet/chitietbaiviet.jsp" />
+  </definition>
+  
+  <definition name="giasu.lich" extends="giasu.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/giasu/giasu/lichLamViec.jsp" />
+  </definition>
+  
+   <definition name="giasu.lich.sua" extends="giasu.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/giasu/giasu/SuaLichLamViec.jsp" />
+  </definition>
+  
+  <definition name="giasu.list.timkiem" extends="giasu.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/giasu/index/listGiaSu.jsp" />
+  </definition>
+  
+   
+  <definition name="giasu.chitiet.giasu" extends="giasu.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/giasu/giasu/taikhoangiasu.jsp" />
+  </definition>
+ 
+  <definition name="giasu.chat" extends="giasu.template">
+  	<put-attribute name="content" value="/WEB-INF/jsp/giasu/index/chat.jsp" />
+  </definition>
+  
+  <!-- kết thúc gia su -->
+  
+  <!-- đây là giao diện ChatBox -->
+  <definition name="chatbox.template" template="/WEB-INF/templates/chatbox/template.jsp">
+    <put-attribute name="header" value="/WEB-INF/templates/chatbox/header.jsp" />
+  	<put-attribute name="content" value="" />
+  	<put-attribute name="footer" value="/WEB-INF/templates/chatbox/footer.jsp" />
+  </definition>
+  
+   <definition name="phuhuynh.chatbox" extends="chatbox.template">
+  	<put-attribute name="content" value="/WEB-INF/jsp/phuhuynh/index/ChatBox.jsp" />
+  </definition>
+  
+  <definition name="giasu.chatbox" extends="chatbox.template">
+  	<put-attribute name="content" value="/WEB-INF/jsp/giasu/index/ChatBox.jsp" />
+  </definition>
+  
+ <!-- kết thúc ChatBox-->
+  
+  
+  
+   
+   
+   <!-- đây là giao diện phuhuynh -->
+   <definition name="phuhuynh.template" template="/WEB-INF/templates/phuhuynh/template.jsp">
+    <put-attribute name="header" value="/WEB-INF/templates/phuhuynh/header.jsp" />
+  	<put-attribute name="content" value="" />
+  	<put-attribute name="footer" value="/WEB-INF/templates/phuhuynh/footer.jsp" />
+  </definition>
+  
+ 
+  <definition name="phuhuynh.index" extends="phuhuynh.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/phuhuynh/index/index.jsp" />
+  </definition>
+  
+  <definition name="phuhuynh.chitiet" extends="phuhuynh.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/phuhuynh/phuhuynh/taikhoanphuhuynh.jsp" />
+  </definition>
+  
+   <definition name="phuhuynh.suataikhoan" extends="phuhuynh.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/phuhuynh/phuhuynh/suataikhoan.jsp" />
+  </definition>
+  
+  <definition name="phuhuynh.baiviet" extends="phuhuynh.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/phuhuynh/index/baiviet.jsp" />
+  </definition>
+  
+   <definition name="phuhuynh.thongbao" extends="phuhuynh.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/phuhuynh/thongbao/thongbao.jsp" />
+  </definition>
+  
+  <definition name="phuhuynh.suanoidung" extends="phuhuynh.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/phuhuynh/phuhuynh/suanoidung.jsp" />
+  </definition>
+    
+    <definition name="phuhuynh.list.timkiem" extends="phuhuynh.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/phuhuynh/index/listGiaSu.jsp" />
+  </definition>
+  
+  <definition name="phuhuynh.chitiet.baiviet" extends="phuhuynh.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/public/baiviet/chitietbaiviet.jsp" />
+  </definition>
+  
+  <definition name="phuhuynh.chitiet.giasu" extends="phuhuynh.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/phuhuynh/phuhuynh/taikhoangiasu.jsp" />
+  </definition>
+ 
+  <definition name="phuhuynh.chat" extends="phuhuynh.template">
+  	<put-attribute name="content" value="/WEB-INF/jsp/phuhuynh/index/chat.jsp" />
+  </definition>
+  
+  
+   <!-- kết thúc gia su -->
+  
+  
+  
+  <!-- đây là giao diện public -->
+  <definition name="public.template" template="/WEB-INF/templates/public/template.jsp">
+    <put-attribute name="header" value="/WEB-INF/templates/public/header.jsp" />
+  	<put-attribute name="content" value="" />
+  	<put-attribute name="footer" value="/WEB-INF/templates/public/footer.jsp" />
+  </definition>
+  
+  <definition name="public.index" extends="public.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/public/index/index.jsp" />
+  </definition>
+  
+  <definition name="public.list.giasu" extends="public.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/public/giasu/listGiaSu.jsp" />
+  </definition>
+  
+  <definition name="public.dangky.giasu" extends="public.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/public/dangky/dangkygiasu.jsp" />
+  </definition>
+  
+  <definition name="public.dangky.phuhuynh" extends="public.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/public/dangky/dangkyphuhuynh.jsp" />
+  </definition>
+  
+  <definition name="public.baiviet" extends="public.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/public/baiviet/baiviet.jsp" />
+  </definition>
+  
+  <definition name="public.chitiet.baiviet" extends="public.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/public/baiviet/chitietbaiviet.jsp" />
+  </definition>
+  
+  <definition name="public.huongdan" extends="public.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/public/index/huongdansudung.jsp" />
+  </definition>
+  
+ 
+
+  
+  
+ 
+ 
+  <!-- kết thúc public -->
+  
+  <!-- đây là giao diện auth -->
+  <definition name="auth.template" template="/WEB-INF/templates/auth/template.jsp">
+    <put-attribute name="header" value="/WEB-INF/templates/auth/header.jsp" />
+  	<put-attribute name="content" value="" />
+  	<put-attribute name="footer" value="/WEB-INF/templates/auth/footer.jsp" />
+  </definition>
+  
+  <!-- kết thúc auth -->
+  
+  <!-- đây là giao diện auth -->
+  <definition name="login.template" template="/WEB-INF/templates/login/template.jsp">
+  	<put-attribute name="content" value="/WEB-INF/jsp/login/login.jsp" />
+  </definition>
+  
+
+  
+  <!-- kết thúc auth -->
+   
+   
+</tiles-definitions>
